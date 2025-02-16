@@ -1,12 +1,19 @@
 import Card from '../components/Card'
 
 const C2C = () => {
+  const graph = "Graphical Method code"
+  const bfs = "BFS code" 
+
+  const copyToClipboard = (text : string) => {
+    navigator.clipboard.writeText(text)
+  }
+
   const onClickGraph = () =>{
-    console.log('graph')
+    copyToClipboard(graph)
   }
 
   const onClickBFS = () => {
-    console.log('BFS')
+    copyToClipboard(bfs)
   }
 
   return (
