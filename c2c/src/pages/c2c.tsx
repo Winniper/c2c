@@ -3,6 +3,9 @@ import Card from '../components/Card'
 const C2C = () => {
   const graphCode = `\
 % Graphical Method for Linear Programming
+format short
+clear all
+clc
 
 % Define constraints
 a = [1 2; 1 1; 1 -2];
@@ -73,6 +76,10 @@ fprintf('Objective value is %f at (%f,%f)', obj, X1, X2);
 `;
 
   const bfsCode = `\
+format short
+clear all
+clc
+
 % Basic Feasible Solution Method for Linear Programming
 
 A = [2 3 -1 4; 1 2 6 -7];
@@ -99,10 +106,22 @@ if n >= m
         end
     end
 
+    % Compute objective function values
     z = c * sol;
+
+    % Display the results
+    fprintf("\nBasic Feasible Solutions and Objective Function Values:\n");
+    fprintf("------------------------------------------------------\n");
+    fprintf("  x1      x2      x3      x4      Z (Objective)\n");
+    fprintf("------------------------------------------------------\n");
+
+    for i = 1:size(sol,2)
+        fprintf("%6.2f  %6.2f  %6.2f  %6.2f  %10.2f\n", sol(:,i)', z(i));
+    end
 else
     disp("Not enough variables for BFS.");
 end
+
 `;
 
   const copyToClipboard = (text: string) => {
