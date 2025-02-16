@@ -111,9 +111,9 @@ end
 
   return (
     <div className='bg-[#0D1117] h-dvh w-auto flex justify-center items-center'>
-      <div className='flex flex-col gap-5 w-11/12 sm:w-3/4 h-full pt-24 pb-10'>
-        <Card classname="bg-[#29903B] text-white" text='Long' onClick={() => copyToClipboard(graphCode)} />
-        <Card classname="bg-[#29903B] text-white" text='Short' onClick={() => copyToClipboard(bfsCode)} />
+      <div className='flex gap-5 pt-24 pb-10'>
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='Long' onClick={() => copyToClipboard(graphCode)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='Short' onClick={() => copyToClipboard(bfsCode)} />
       </div>
     </div>
   );
