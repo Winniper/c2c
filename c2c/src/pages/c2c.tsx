@@ -110,22 +110,21 @@ if n >= m
     z = c * sol;
 
     % Display the results
-    fprintf("\nBasic Feasible Solutions and Objective Function Values:\n");
-    fprintf("------------------------------------------------------\n");
-    fprintf("  x1      x2      x3      x4      Z (Objective)\n");
-    fprintf("------------------------------------------------------\n");
+    fprintf("Basic Feasible Solutions and Objective Function Values:\\n");
+    fprintf("------------------------------------------------------\\n");
+    fprintf("  x1      x2      x3      x4      Z (Objective)\\n");
+    fprintf("------------------------------------------------------\\n");
 
     for i = 1:size(sol,2)
-        fprintf("%6.2f  %6.2f  %6.2f  %6.2f  %10.2f\n", sol(:,i)', z(i));
+        fprintf("%6.2f  %6.2f  %6.2f  %6.2f  %10.2f\\n", sol(:,i)', z(i));
     end
 else
     disp("Not enough variables for BFS.");
 end
-
 `;
 
   const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text)
+    navigator.clipboard.writeText(text.replace(/\n/g, "\r\n"))
   };
 
   return (
