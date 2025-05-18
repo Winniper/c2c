@@ -378,11 +378,11 @@ fprintf('Optimal value f(x) = %f \n', fobj(x0));
   return (
     <div className='bg-[#0D1117] h-dvh w-auto flex justify-center items-center'>
       <div className='flex gap-5 pt-24 pb-10'>
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='BigM' onClick={() => copyToClipboard(bigM)} />
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='simplex' onClick={() => copyToClipboard(simplex)} />
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='DualSimplex' onClick={() => copyToClipboard(dualSimplex)} />
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='LCM' onClick={() => copyToClipboard(LCM)} />
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='SteepestDescent' onClick={() => copyToClipboard(SD)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='m' onClick={() => copyToClipboard(bigM)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='x' onClick={() => copyToClipboard(simplex)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='dx' onClick={() => copyToClipboard(dualSimplex)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='l' onClick={() => copyToClipboard(LCM)} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='s' onClick={() => copyToClipboard(SD)} />
       </div>
     </div>
   );
