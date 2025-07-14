@@ -1,4 +1,5 @@
 import Card from '../components/Card'
+import fileUrl from '../assets/Prob&StatDanveerDagur.pdf';
 
 const C2C = () => {
 
@@ -20,7 +21,7 @@ const C2C = () => {
   return (
     <div className='bg-[#0D1117] h-dvh w-auto flex justify-center items-center'>
       <div className='flex gap-5 pt-24 pb-10'>
-        <Card classname="bg-[#584F44] text-[#9E9893]" text='Forza' onClick={() => downloadfile('./assets/Prob&StatDanveerDagur.pdf')} />
+        <Card classname="bg-[#584F44] text-[#9E9893]" text='Forza' onClick={() => downloadfile(fileUrl)} />
       </div>
     </div>
   );
