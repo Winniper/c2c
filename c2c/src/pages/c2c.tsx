@@ -3,9 +3,9 @@ import Card from '../components/Card'
 const C2C = () => {
 
 
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text.replace(/\n/g, "\r\n"))
-  };
+//   const copyToClipboard = (text: string) => {
+//     navigator.clipboard.writeText(text.replace(/\n/g, "\r\n"))
+//   };
 
   const downloadfile = (url: string) => {
     const fileName = url.split('/').pop();
